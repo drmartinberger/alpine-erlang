@@ -22,12 +22,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        otp: [26.2.3]
-        alpine: [3.19.1]
+        otp: [27.2]
+        alpine: [3.21.0]
         latest: [false]
         include:
-          - otp: 26.2.1
-            alpine: 3.19.1
+          - otp: 27.2
+            alpine: 3.21.0
             latest: true
     steps:
     - name: Checkout
