@@ -20,7 +20,7 @@ To boot straight to a prompt in the image (versioning info is stripped here, but
 of what to expect):
 
 ```
-$ docker run --rm -it --user=root bitwalker/alpine-erlang erl
+$ docker run --rm -it --user=root freeeze/alpine-erlang erl
 Erlang/OTP XX [erts-X.X] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
 
 Eshell VX.X  (abort with ^G)
@@ -39,7 +39,7 @@ you need additional OTP applications from the standard library, you will need to
 config flags for the build so that those applications are present.
 
 ```dockerfile
-FROM bitwalker/alpine-erlang:latest
+FROM freeeze/alpine-erlang:latest
 
 # Set exposed ports
 EXPOSE 5000
