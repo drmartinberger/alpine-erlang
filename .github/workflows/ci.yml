@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - fork-to-freeeze
     paths:
       - 'Makefile'
       - 'Dockerfile'
